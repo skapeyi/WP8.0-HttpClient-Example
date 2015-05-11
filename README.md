@@ -4,7 +4,7 @@ You basically send a json object to the api and it sends back a json response, w
 There is an ApiCall class that contains other methods  for making a GET and PUT request that are not used in this example, but the usage should be the same as that of the POST request.
 
 For the sample POST request made, the api expects a json object like this =>
-{
+```{
     "sessions": {
         "links": {
             "user": {
@@ -13,10 +13,10 @@ For the sample POST request made, the api expects a json object like this =>
             }
         }
     }
-}
+}```
 
 If the account exists, it sends back a response after the session has been created!
-{
+```{
     "sessions": {
         "id": "{id}",
         "access_token": "{access_token}",
@@ -35,4 +35,4 @@ If the account exists, it sends back a response after the session has been creat
             }
         }
     }
-}
+}```
