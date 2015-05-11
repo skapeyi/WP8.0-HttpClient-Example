@@ -35,7 +35,6 @@ namespace WPHttpClient
                 request.resource_url = "api/sessions";
                 //Make api call and wait for it to complete and send back the response string!
                 var response = await request.postRequest();
-
                 if (!string.IsNullOrEmpty(response) && !string.IsNullOrWhiteSpace(response))
                 {
                     try
